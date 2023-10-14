@@ -1,4 +1,9 @@
 # Instalasi SSH Server
+
+```sh
+apt update
+```
+
 # Konfigurasi Ip Address Netplan
 # instalasi FTP Server
 # konfigurasi FTP
