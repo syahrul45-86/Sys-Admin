@@ -1,8 +1,9 @@
 # Sys-Admin
 tugas akhir
 
-<h1>Install SSH</h1>
+<h3>Install SSH</h1>
 
+Langkah-Langkah Instalasi SSH Server :
 ```sh
 apt update
 ```
