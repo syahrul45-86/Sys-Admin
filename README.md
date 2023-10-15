@@ -7,6 +7,13 @@ Langkah-Langkah Instalasi SSH Server :
 ```sh
 apt update
 ```
-'''sh
+```sh
 apt install openssh-server 
-'''
+```
+```sh
+systemctl start ssh
+```
+```sh
+systemctl enable ssh
+system status ssh 
+```
