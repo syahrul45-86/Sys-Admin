@@ -62,3 +62,46 @@ sudo netplan apply
 if config
 ```
 
+<h3>Instalasi FTP Server dan Konfigurasi FTP Server</h1>
+
+1. Install FTP server  :
+```sh
+apt install vsftpd
+```
+2. Cek status vsftpd menggunakan perintah berikut: :
+```sh
+service vsftpd status
+```
+<h4>Konfigurasi FTP Server </h4>
+
+1. masuk ke file pada file /etc/vsftpd.conf:
+```sh
+nano  /etc/vsftpd.conf 
+```
+2. Edit konfigurasi seperti dibawah ini, pastikan hilangkan pagar di depannya :
+```sh
+listen=NO
+listen_ipv6=YES
+anonymous_enable=NO
+local_enable=YES
+write_enable=YES
+local_umask=022
+dirmessage_enable=YES
+use_localtime=YES
+xferlog_enable=YES
+connect_from_port_20=YES
+chroot_local_user=YES
+secure_chroot_dir=/var/run/vsftpd/empty
+pam_service_name=vsftpd
+rsa_cert_file=/etc/ssl/certs/ssl-cert-snakeoil.pem
+rsa_private_key_file=/etc/ssl/private/ssl-cert-snakeoil.key
+ssl_enable=NO
+pasv_enable=Yes
+pasv_min_port=10000
+pasv_max_port=10100
+allow_writeable_chroot=Yes
+```
+3. simpan hasil konfigurasi lalu restart vsftpd menggunakan perintah berikut :
+```sh
+sudo systemctl restart vsftpd
+```
