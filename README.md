@@ -24,3 +24,13 @@ konfigurasi SSH Server
 ```sh
 nano /etc/ssh/sshd_config
 ```
+2. Hilangkan Tanda Pagar, pada bagian :
+```sh
+Port 22
+PermitRootLogin yes
+```
+3. Restart service ssh :
+```sh
+systemctl restart ssh
+```
+
