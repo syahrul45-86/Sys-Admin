@@ -20,7 +20,7 @@ system status ssh
 <h3>Install SSH</h1>
 
 konfigurasi SSH Server
-1. # masuk ke file konfigurasai SSH :
+1. masuk ke file konfigurasai SSH :
 ```sh
 nano /etc/ssh/sshd_config
 ```
