@@ -110,9 +110,7 @@ sudo ufw allow 'nginx HTTTP'
 hostname -I
 ```
 4. Kemudian copy alamat ip dan coba di browser pilihan anda  :
-```sh
-apt install nginx
-```
+
 
 <h3>Instalasi MySQL</h1>
 1. Install Mysql  :
@@ -120,12 +118,12 @@ apt install nginx
 sudo apt install mysql-server
 ```
 2. Setelah selesai instalasi, disarankan menjalankan skrip keamanan yang sudah diinstall oleh MySQL,
-skirp ini menghapus pengaturan default yang tidak aman dan menggunci akses ke sistem database:
+   skirp ini menghapus pengaturan default yang tidak aman dan menggunci akses ke sistem database:
 ```sh
 sudo mysql_secure_installation
 ```
 3. ketika di berikan pertanyaan jawab Y,dan buatlah kata sandi untuk pengguna root MySQL,
-setelah itu masukan perintah y:
+   setelah itu masukan perintah y:
 
 4. Untuk menjalankan perintah MySQL gunakan perintah   :
 ```sh
