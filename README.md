@@ -113,11 +113,12 @@ hostname -I
 
 
 <h3>Instalasi MySQL</h1>
+
 1. Install Mysql  :
 ```sh
 sudo apt install mysql-server
 ```
-2. Setelah selesai instalasi, disarankan menjalankan skrip keamanan yang sudah diinstall oleh MySQL,<br>9 skirp ini menghapus pengaturan default yang tidak aman dan menggunci akses ke sistem database:
+2. Setelah selesai instalasi, disarankan menjalankan skrip keamanan yang sudah diinstall oleh MySQL,<br> skirp ini menghapus pengaturan default yang tidak aman dan menggunci akses ke sistem database:
 ```sh
 sudo mysql_secure_installation
 ```
