@@ -132,6 +132,7 @@ sudo mysql
 
 <h3>Instalasi PHP</h1>
 <h4>Disini saya menggunakan nginx maka dari itu saya menginstall php8.1-fpm</h4>
+
 1. Install PHP 8.1 dan tunggu installasinya selesai.  :
 ```sh
 sudo apt install php8.1-fpm php-mysql
