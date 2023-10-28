@@ -57,7 +57,7 @@ network:
 ```sh
 sudo netplan apply
 ```
-3. cek ip address :
+4. cek ip address :
 ```sh
 if config
 ```
@@ -89,4 +89,52 @@ allow_writeable_chroot=Yes
 3. simpan hasil konfigurasi lalu restart vsftpd menggunakan perintah berikut :
 ```sh
 sudo systemctl restart vsftpd
+```
+
+<h3>Instalasi NGINX</h1>
+
+1. Install nginx  :
+```sh
+apt install nginx
+```
+2. karena belum menginstall ssl, maka disarankan mengaktifkan firewall dan mengizinkan lalu lintas
+   yang diperlukan saja, disini saya mengizinkan lalu lintas HTTP di port 80 menggunakan perintah
+```sh
+sudo ufw enable
+```
+```sh
+sudo ufw allow 'nginx HTTTP'
+```
+3. Untuk mengakses nginx gunakan perintah dibawah ini  :
+```sh
+hostname -I
+```
+4. Kemudian copy alamat ip dan coba di browser pilihan anda  :
+```sh
+apt install nginx
+```
+
+<h3>Instalasi MySQL</h1>
+1. Install Mysql  :
+```sh
+sudo apt install mysql-server
+```
+2. Setelah selesai instalasi, disarankan menjalankan skrip keamanan yang sudah diinstall oleh MySQL,
+skirp ini menghapus pengaturan default yang tidak aman dan menggunci akses ke sistem database:
+```sh
+sudo mysql_secure_installation
+```
+3. ketika di berikan pertanyaan jawab Y,dan buatlah kata sandi untuk pengguna root MySQL,
+setelah itu masukan perintah y:
+
+4. Untuk menjalankan perintah MySQL gunakan perintah   :
+```sh
+sudo mysql
+```
+
+<h3>Instalasi PHP</h1>
+<h4>Disini saya menggunakan nginx maka dari itu saya menginstall php8.1-fpm</h4>
+1. Install PHP 8.1 dan tunggu installasinya selesai.  :
+```sh
+sudo apt install php8.1-fpm php-mysql
 ```
