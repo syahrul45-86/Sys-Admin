@@ -144,3 +144,29 @@ zone "56.168.192.in-addr.arpa" {
 };
 
 ```
+
+6. :
+```sh
+cp db.local db.syahrultk01
+```
+
+7. :
+```sh
+nano db.syahrultk01
+```
+
+8.:
+```sh
+@       IN      SOA     syahrultk01.com. root.syahrultk01.com. (
+                              2         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+@       IN      NS      syahrultk01.com.
+@       IN      A       192.168.56.114
+1       IN      A       192.168.56.114
+1       IN      PTR     www.syahrultk01.com.
+www.syahrultk01.com     IN      CNAME syahrultk01.com
+```
