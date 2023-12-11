@@ -108,3 +108,26 @@ sudo mysql
 ```sh
 sudo apt install php8.1-fpm php-mysql
 ```
+
+<h3>Instalasi dan konfigurasi DNS Server BIND9</h1>
+
+<h4>Install dan konfigurasi DNS Server BIND9</h4>
+
+1. Install BIND9   :
+```sh
+sudo apt install bind9
+```
+2. :
+```sh
+cd /etc/bind
+```
+3. :
+```sh
+cd named.conf.local named.conf.local.old
+```
+
+4. :
+```sh
+nano named.conf.local
+```
+
