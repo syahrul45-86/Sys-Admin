@@ -170,3 +170,48 @@ nano db.syahrultk01
 1       IN      PTR     www.syahrultk01.com.
 www.syahrultk01.com     IN      CNAME syahrultk01.com
 ```
+
+9. :
+```sh
+cp db.255 db.192
+```
+
+10. :
+```sh
+nano db.192
+```
+
+11. :
+```sh
+@       IN      SOA     syahrultk01.com. root.syahrultk01.com. (
+                              1         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+@       IN      NS      syahrultk01.com.
+1       IN      PTR     syahrultk01.com.
+```
+
+12. :
+```sh
+nano /etc/resolv.conf
+```
+
+13. :
+```sh
+nameserver 192.168.56.114
+search syahrultk01.com
+```
+
+14.:
+```sh
+systemctl restart bind9
+```
+
+15. :
+```sh
+ nslookup syahrultk01.com
+```
+17.  Setelah itu lakukan perintah ping domain:
