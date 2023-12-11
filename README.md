@@ -130,4 +130,17 @@ cd named.conf.local named.conf.local.old
 ```sh
 nano named.conf.local
 ```
+5. :
+```sh
+zone "syahrultk01.com" {
+        type master;
+        file "/etc/bind/db.syahrultk01";
 
+};
+
+zone "56.168.192.in-addr.arpa" {
+        type master;
+        file "/etc/bind/db.192";
+};
+
+```
