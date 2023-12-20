@@ -1,4 +1,4 @@
-# Sys-Admin
+# WB-SERVER
 tugas akhir
 
 <h3>Install SSH</h1>
