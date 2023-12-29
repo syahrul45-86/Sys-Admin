@@ -1,1 +1,10 @@
- Mengonfigurasi Nginx untuk Menggunakan Prosesor PHP
+
+#  Mengonfigurasi Nginx untuk Menggunakan Prosesor PHP
+
+<h3>Mengonfigurasi Nginx untuk Menggunakan PHP</h1>
+```sh
+apt update
+```
+```sh
+apt install openssh-server 
+```
